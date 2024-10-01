@@ -121,3 +121,81 @@ a {
 .gallery img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
 }
+/* Contact Us Section */
+.contact-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.contact-section h1 {
+    font-size: 3em;
+    color: #f39c12; /* Golden color for the header */
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+/* Contact Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #f39c12;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Curved edges */
+    border: 1px solid #555;
+    background-color: #222;
+    color: #fff;
+    font-size: 1em;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: #f39c12;
+}
+
+/* Submit Button */
+.btn-submit {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #f39c12; /* Golden button color */
+    color: #000; /* Black text on button */
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; /* Curved button */
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-submit:active {
+    background-color: #e67e22; /* Darker color when clicked */
+    transform: scale(0.98); /* Button press effect */
+}
+
+.btn-submit:hover {
+    background-color: #e67e22; /* Darker hover effect */
+    transform: scale(1.05); /* Slightly enlarges on hover */
+}
