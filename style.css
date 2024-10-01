@@ -181,6 +181,141 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Light grey background */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for sections */
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+/* Form Styling for Registration and Contact Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 15px; /* Rounded corners for form container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color: #333;
+    width: 100%;
+    text-align: left;
+}
+
+input[type="text"], input[type="email"], input[type="password"], select, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Rounded corners for input fields */
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #f39c12; /* Yellow border on focus */
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    -webkit-appearance: none; /* Remove default dropdown arrow */
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Yellow Buttons */
+button, input[type="submit"] {
+    background-color: #f39c12; /* Yellow button background */
+    color: #fff; /* White text */
+    padding: 15px 30px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; /* Rounded button edges */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #e67e22; /* Darker yellow on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+button:active, input[type="submit"]:active {
+    background-color: #d35400; /* Even darker yellow on click */
+    transform: scale(0.98); /* Button press effect */
+}
+
+/* Form Containers */
+.registration-form, .contact-form {
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional Styles for Contact Page */
+textarea {
+    height: 150px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
 
 /* Responsive Design */
 @media (min-width: 768px) {
