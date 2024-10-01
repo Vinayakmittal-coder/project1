@@ -85,3 +85,39 @@ h1, h2, h3 {
 a {
     text-decoration: none;
 }
+/* Event Gallery Section */
+.gallery-section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.gallery-section h1 {
+    font-size: 3em;
+    color: #f39c12; /* Golden color for the header */
+    margin-bottom: 20px;
+}
+
+.gallery-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: #ddd;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px; /* Curved edges for images */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
