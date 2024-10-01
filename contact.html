@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact XYZ Company</title>
+    <title>Contact Us - XYZ Company</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <h1>Contact XYZ Company</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -21,15 +20,29 @@
     </header>
 
     <main>
-        <section>
-            <h2>Get in Touch</h2>
-            <p>Email: contact@xyzcompany.com</p>
-            <p>Phone: +123-456-7890</p>
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>We would love to hear from you! Please fill out the form below and we'll get back to you soon.</p>
+
+            <!-- Contact Form -->
+            <form action="#" method="POST" class="contact-form">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 XYZ Company</p>
+        <p>&copy; 2024 XYZ Company. All rights reserved.</p>
     </footer>
 
     <script src="js/script.js"></script>
