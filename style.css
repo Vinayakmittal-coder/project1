@@ -40,83 +40,31 @@ header nav ul li a:hover {
     color: #f39c12; /* Golden hover effect */
 }
 
-/* Registration Section */
-.registration-section {
+/* About Us Section */
+.about-us-section {
     padding: 100px 20px;
-    text-align: center;
+    text-align: left;
+    max-width: 1000px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
-.registration-section h1 {
+.about-us-section h1 {
     font-size: 3em;
     color: #f39c12; /* Golden color for the header */
-}
-
-.registration-section p {
-    font-size: 1.2em;
-    max-width: 800px;
-    margin: 0 auto 30px;
-    line-height: 1.5;
-}
-
-/* Registration Form */
-.registration-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #111;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-    width: 80%;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.registration-form label {
-    font-size: 1.2em;
-    margin: 10px 0 5px;
-    color: #f39c12;
-}
-
-.registration-form input, .registration-form select {
-    width: 100%;
-    padding: 12px;
     margin-bottom: 20px;
-    border-radius: 10px; /* Curved edges */
-    border: 1px solid #555;
-    background-color: #222;
-    color: #fff;
-    font-size: 1em;
 }
 
-.registration-form input:focus, .registration-form select:focus {
-    outline: none;
-    border-color: #f39c12;
+.about-us-section h2 {
+    font-size: 2em;
+    color: #f39c12;
+    margin-top: 40px;
 }
 
-/* Register Button */
-.btn-register {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #f39c12; /* Golden button color */
-    color: #000; /* Black text on button */
+.about-us-section p {
     font-size: 1.2em;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px; /* Curved button */
-    margin-top: 20px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-.btn-register:active {
-    background-color: #e67e22; /* Darker color when clicked */
-    transform: scale(0.98); /* Button press effect */
-}
-
-.btn-register:hover {
-    background-color: #e67e22; /* Darker hover effect */
-    transform: scale(1.05); /* Slightly enlarges on hover */
+    margin-bottom: 20px;
+    color: #ddd; /* Lighter text for better readability */
 }
 
 /* Footer */
@@ -132,4 +80,8 @@ footer {
 
 h1, h2, h3 {
     margin: 20px 0;
+}
+
+a {
+    text-decoration: none;
 }
