@@ -37,79 +37,86 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #f39c12; /* A golden color for hover effect */
+    color: #f39c12; /* Golden hover effect */
 }
 
-/* Hero Section */
-.hero-section {
-    height: 100vh; /* Full viewport height */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #000;
+/* Registration Section */
+.registration-section {
+    padding: 100px 20px;
     text-align: center;
 }
 
-.hero-section h1 {
-    font-size: 5em; /* Large company name */
-    font-weight: bold;
-    color: #f39c12; /* Golden color for the company name */
-    margin: 0;
+.registration-section h1 {
+    font-size: 3em;
+    color: #f39c12; /* Golden color for the header */
 }
 
-.hero-section p {
-    font-size: 1.5em;
-    color: #fff;
-    margin: 10px 0;
-    font-style: italic;
-}
-
-/* Introduction Section */
-.intro {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #111; /* Slightly lighter black */
-}
-
-.intro h2 {
-    font-size: 2.5em;
-    color: #f39c12; /* Accent color for headers */
-}
-
-.intro p {
+.registration-section p {
     font-size: 1.2em;
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     line-height: 1.5;
 }
 
-/* Upcoming Events Section */
-.upcoming-events {
-    padding: 50px 20px;
-    text-align: center;
-    background-color: #1a1a1a; /* Dark grey section to add contrast */
+/* Registration Form */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.upcoming-events h3 {
-    font-size: 2em;
+.registration-form label {
+    font-size: 1.2em;
+    margin: 10px 0 5px;
     color: #f39c12;
 }
 
-.upcoming-events ul {
-    list-style-type: none;
-    padding: 0;
+.registration-form input, .registration-form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 10px; /* Curved edges */
+    border: 1px solid #555;
+    background-color: #222;
     color: #fff;
+    font-size: 1em;
 }
 
-.upcoming-events ul li {
-    font-size: 1.2em;
-    margin: 15px 0;
-    padding: 10px;
-    background-color: #333;
+.registration-form input:focus, .registration-form select:focus {
+    outline: none;
+    border-color: #f39c12;
+}
+
+/* Register Button */
+.btn-register {
     display: inline-block;
-    width: 80%;
-    border-radius: 5px;
+    padding: 15px 30px;
+    background-color: #f39c12; /* Golden button color */
+    color: #000; /* Black text on button */
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px; /* Curved button */
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-register:active {
+    background-color: #e67e22; /* Darker color when clicked */
+    transform: scale(0.98); /* Button press effect */
+}
+
+.btn-register:hover {
+    background-color: #e67e22; /* Darker hover effect */
+    transform: scale(1.05); /* Slightly enlarges on hover */
 }
 
 /* Footer */
@@ -123,15 +130,6 @@ footer {
     width: 100%;
 }
 
-/* Miscellaneous */
 h1, h2, h3 {
     margin: 20px 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    padding: 0;
 }
